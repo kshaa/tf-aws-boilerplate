@@ -7,7 +7,7 @@ terragrunt = {
       region         = "<% awsRegion %>"
       # Profile appended in remote_state s3 bucket name, because s3 bucket names must be unique
       # and sometimes the project code isn't unique, but in combination w/ profile, it will be
-      bucket         = "<% awsProfile %>-<% awsRegion %>-tfstate"
+      bucket         = "<% awsProfile %>-<% projectCode %>-tfstate"
       key            = "${path_relative_to_include()}/terraform.tfstate"
       encrypt        = true
       dynamodb_table = "<% projectCode %>-terraform-lock"
