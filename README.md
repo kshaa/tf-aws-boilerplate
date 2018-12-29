@@ -21,3 +21,24 @@ $ ./generate.sh # This will also install the DIY processor
 ? Codename of the project [only lowercase symbols, please] 
 ```
 - Copy `dst` as the start of your own project
+
+#### Interactive (zshrc alias)
+- Install `node` and `npm`  
+- Add the following alias to `.zshrc`  
+  `alias generate_aws=". ~/Code/tf-aws-boilerplate/generate.sh"`
+- Reload `zsh` configurations  
+- Generate a boilerplate from wherever  
+```
+$ pwd
+* Doesn't matter *  
+  
+$ generate_aws ~/Code/new-tf-project  
+? Codename of the project [only lowercase symbols, please] 
+```
+- Copy `dst` as the start of your own project
+
+# Notes
+Alias for generating on-spot
+```
+
+```
