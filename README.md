@@ -35,10 +35,3 @@ $ pwd
 $ generate_aws ~/Code/new-tf-project  
 ? Codename of the project [only lowercase symbols, please] 
 ```
-- Copy `dst` as the start of your own project
-
-# Notes
-Alias for generating on-spot
-```
-
-```
