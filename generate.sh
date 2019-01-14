@@ -13,11 +13,11 @@ fi
 
 # Install template processor
 if ! command_location="$(type -p "$command_name")" || [[ -z command_location ]]; then
-  npm install -g git+https://git@github.com/kshaa/interactive-template.git
+  npm install -g git+https://git@github.com/kshaa/interactive-template.git#v2.0.0
 fi
 
 # Run template processor
 echo "AWS boilerplate is coming from '$src_path'"
 echo "Will be generating in '$dst_path'"
 echo
-eval "$command_name --variablesJs ${src_path}/variables.json --templateDir ${src_path}/src --outputDir ${dst_path}"
+eval "$command_name -i ${src_path}/src -v ${src_path}/variables.json -o ${dst_path}"
